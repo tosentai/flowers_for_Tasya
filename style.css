@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2deb4;
+}
+nav.flower {
+    margin: 0 auto;
+    min-width: 21rem;
+    overflow: hidden;
+    padding: 8rem;
+    position: relative;
+  }
+
+  nav.flower ul {
+    box-shadow: 
+      0 0 0 0.15rem white inset, 
+      0 0 1rem 1rem orchid inset,
+      0 0 3rem 5rem blueviolet inset, 
+      0 0 2rem 2.5rem lemonchiffon;
+    border: 2px solid orange;
+    border-radius: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  nav.flower ul::before {
+    color: lemonchiffon;
+    color: rgba(255, 255, 205, 0.65);
+    content: "❀";
+    font: bold 20rem/1 sans-serif;
+    position: absolute;
+    left: -6.5rem;
+    top: -7.5rem;
+    opacity: 0.5;
+    text-shadow: 
+      1px 1px 1px crimson, 
+      1px -1px 1px crimson, 
+      -1px 1px 1px crimson,
+      -1px -1px 1px crimson, 
+      0 0 1rem crimson;
+    transform: rotate(36deg);
+    transition: all 3s ease;
+  }
+  
+  nav.flower li {
+    background: transparent;
+    background: radial-gradient(
+      farthest-corner at 130% -30%,
+      orchid 55%,
+      rgba(255, 255, 212, 0.6) 72%,
+      rgba(228, 158, 249, 0.7) 73%,
+      rgba(228, 158, 249, 0.5) 74%,
+      orchid 99%
+    );
+    border: 1px solid lemonchiffon;
+    box-shadow: 
+      0 0 2px purple, 
+      0 0 0.5rem orange, 
+      0 0 0.5rem lemonchiffon inset,
+      0 0 2rem orchid inset;
+    height: 6rem;
+    width: 8rem;
+    font: 4rem/6rem sans-serif;
+    position: absolute;
+    text-align: center;
+    transition: transform 0.5s ease;
+  }
+  
+  nav.flower li:nth-child(1) {
+    top: -6rem;
+    left: -2rem;
+    border-radius: 0.25rem 10rem 4rem 12rem;
+    transform: rotate(60deg);
+  }
+  
+  nav.flower li:nth-child(2) {
+    top: -2.75rem;
+    left: 3.5rem;
+    border-radius: 3rem 10rem 0.25rem 10rem;
+    transform: rotate(310deg);
+  }
+  
+  nav.flower li:nth-child(3) {
+    top: 2.75rem;
+    left: 2.5rem;
+    border-radius: 8rem 10rem 0.25rem 10rem;
+    transform: rotate(10deg);
+  }
+  
+  nav.flower li:nth-child(4) {
+    top: 4rem;
+    left: -4.5rem;
+    border-radius: 0.25rem 10rem 5rem 12rem;
+    transform: rotate(-75deg);
+  }
+  
+  nav.flower li:nth-child(5) {
+    top: -1.5rem;
+    left: -7rem;
+    border-radius: 0.25rem 10rem 5rem 12rem;
+    transform: rotate(-20deg);
+  }
+  
+  nav.flower li a {
+    color: mediumpurple;
+    display: block;
+    text-decoration: none;
+    text-shadow: 
+      0 0 1px crimson, 
+      0 0 2px white, 
+      0 0 1rem lemonchiffon;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: rotate(var(--i)), scale(.5);
+    
+  }
+  
+  nav.flower li a:hover,
+  nav.flower li a:active {
+    color: rebeccapurple;
+  }
+  
+  nav.flower ul::after {
+    color: lemonchiffon;
+    color: rgba(255, 255, 205, 0.75);
+    content: "❤️";
+    font: bold 3rem/1 sans-serif;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    left: 5px;
+    top: 16px;
+    padding-left: 0.15rem;
+    text-shadow: 1px 1px 1px crimson, 0 0 16px crimson;
+    transition: all 1.5s ease-out;
+  }
+  
+  nav.flower ul:hover::before {
+    transform: rotate(396deg);
+    opacity: 0.75;
+  }
+  
+  nav.flower ul:hover::after {
+    transform: scale(1.5, 1.5) rotateZ(-360deg);
+    text-shadow: 1px 1px 1px lightcoral, 0 0 16px lightcoral;
+  }
+  
+  nav.flower li:hover {
+    font-size: 1.5rem;
+    transform: scale(1.25, 1.25);
+    z-index: 1;
+  }
+  
+  nav.flower li a:hover::before {
+    content: attr(data-menu);
+  }
+
+  .flower-text-one {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lightcoral;
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.flower-text-sec {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lightcoral;
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+}
